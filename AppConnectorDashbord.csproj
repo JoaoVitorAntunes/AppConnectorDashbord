@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UsersControls\Images\1433060926_vector_66_09.png" />
+    <None Remove="UsersControls\Images\appconnector241x45.png" />
+    <None Remove="UsersControls\Images\Engrenagem.png" />
+    <None Remove="UsersControls\Images\nddigital.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="UsersControls\Images\1433060926_vector_66_09.png" />
+    <Resource Include="UsersControls\Images\appconnector241x45.png" />
+    <Resource Include="UsersControls\Images\Engrenagem.png" />
+    <Resource Include="UsersControls\Images\nddigital.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+    <Folder Include="Services\" />
+    <Folder Include="Stores\" />
+  </ItemGroup>
+
+</Project>

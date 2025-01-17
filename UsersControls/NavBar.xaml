@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="AppConnectorDashbord.UsersControls.NavBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AppConnectorDashbord.UsersControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="200">
+    <UserControl.Resources>
+        <Style x:Key="TextMenu" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Border   Grid.Column="0"  Background="White" CornerRadius="10">
+            <StackPanel>
+                <WrapPanel Margin="0, 60,0,150" HorizontalAlignment="Center">
+                    <Image Width="180" RenderOptions.BitmapScalingMode="HighQuality" Source="Images/appconnector241x45.png" ></Image>
+                </WrapPanel>
+                <Button Margin="0,0,0,20" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" Width="auto" Height="35">
+                    <WrapPanel  Width="120">
+                        <Image Margin="0,0,20,0" RenderOptions.BitmapScalingMode="HighQuality" Width="15" Source="Images/Engrenagem.png"></Image>
+                        <TextBlock Style="{DynamicResource TextMenu}">Conectores</TextBlock>
+                    </WrapPanel>
+                </Button>
+                <Button Margin="0,0,0,20" Background="Transparent" BorderThickness="0"  HorizontalAlignment="Center" Width="auto" Height="35">
+                    <WrapPanel Width="120">
+                        <Image Margin="0,0,20,0" RenderOptions.BitmapScalingMode="HighQuality" Width="15" Source="Images/1433060926_vector_66_09.png"></Image>
+                        <TextBlock Style="{DynamicResource TextMenu}">Dashboard</TextBlock>
+                    </WrapPanel>
+                </Button>
+                <Button Margin="0,0,0,20" Background="Transparent" BorderThickness="0"  HorizontalAlignment="Center" Width="auto" Height="35">
+                    <WrapPanel Width="120">
+                        <Image Margin="0,0,20,0" RenderOptions.BitmapScalingMode="HighQuality" Width="15" Source="Images/1433060926_vector_66_09.png"></Image>
+                        <TextBlock Style="{DynamicResource TextMenu}">Ferramentas</TextBlock>
+                    </WrapPanel>
+                </Button>
+                <Button Background="Transparent" BorderThickness="0"  HorizontalAlignment="Center" Width="auto" Height="35">
+                    <WrapPanel Width="120">
+                        <Image Margin="0,0,20,0" RenderOptions.BitmapScalingMode="HighQuality" Width="15" Source="Images/1433060926_vector_66_09.png"></Image>
+                        <TextBlock Style="{DynamicResource TextMenu}">Descrypt</TextBlock>
+                    </WrapPanel>
+                </Button>
+                <Image VerticalAlignment="Bottom" Margin="0,250,0,0" Width="100" RenderOptions.BitmapScalingMode="HighQuality" Source=" Images/nddigital.png"></Image>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>
